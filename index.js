@@ -1,7 +1,4 @@
 'use strict';
-
-require('dotenv').config();
-
 const express = require('express');
 const mongo = require('mongodb').MongoClient;
 const mongoURL = `mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@ds023560.mlab.com:23560/heroku_f2blhv37`;
