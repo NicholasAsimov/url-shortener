@@ -1,0 +1,29 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "FreeCodeCamp - API Project: URL Shortener Microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicholasAsimov/url-shortener.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicholasAsimov/url-shortener/issues"
+  },
+  "homepage": "https://github.com/NicholasAsimov/url-shortener#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongodb": "^2.1.16",
+    "pug": "^2.0.0-alpha3"
+  },
+  "devDependencies": {
+    "eslint": "^2.7.0",
+    "eslint-config-airbnb": "^7.0.0"
+  }
+}
