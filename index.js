@@ -1,7 +1,7 @@
 'use strict';
 const express = require('express');
 const mongo = require('mongodb').MongoClient;
-const mongoURL = `mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@ds023560.mlab.com:23560/heroku_f2blhv37`;
+const mongoURL = process.env.MONGODB_URI;
 // const mongoURL = `mongodb://localhost:27017/url-shortener`;
 
 function generateID() {
