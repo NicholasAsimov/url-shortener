@@ -1,17 +1,19 @@
 'use strict';
 
+require('dotenv').config();
+
 const express = require('express');
 const mongo = require('mongodb').MongoClient;
-const mongoURL = `mongodb://${process.env.IP}:27017/url-shortener`;
+const mongoURL = `mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@ds023560.mlab.com:23560/heroku_f2blhv37`;
 // const mongoURL = `mongodb://localhost:27017/url-shortener`;
-
-const app = express();
 
 function generateID() {
   // Generates random number in range 10000-99999
   // This is not ideal because it's gonna lead to collisions
   return Math.floor(Math.random() * 90000) + 10000;
 }
+
+const app = express();
 
 app.set('port', process.env.PORT || 3000);
 app.set('views', './views');
