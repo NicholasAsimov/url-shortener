@@ -2,8 +2,8 @@
 
 const express = require('express');
 const mongo = require('mongodb').MongoClient;
-// const mongoURL = `mongodb://${process.env.IP}:27017/url-shortener`;
-const mongoURL = `mongodb://localhost:27017/url-shortener`;
+const mongoURL = `mongodb://${process.env.IP}:27017/url-shortener`;
+// const mongoURL = `mongodb://localhost:27017/url-shortener`;
 
 const app = express();
 
