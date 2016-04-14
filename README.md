@@ -23,7 +23,7 @@ https://reducer.herokuapp.com/new/http://example.com
 ```
 https://reducer.herokuapp.com/3682
 ```
-will redirect to
+will redirect to:
 ```
 http://www.example.com
 ```
